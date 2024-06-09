@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Grocery Shopping Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Grocery Shopping Assistant</h1>
+        
+        <!-- Grocery List Section -->
+        <div class="section">
+            <h2>Grocery List</h2>
+            <input type="text" id="groceryItem" placeholder="Add grocery item">
+            <button onclick="addGroceryItem()">Add</button>
+            <ul id="groceryList"></ul>
+        </div>
+        
+        <!-- Recipe Finder Section -->
+        <div class="section">
+            <h2>Recipe Finder</h2>
+            <input type="text" id="ingredient" placeholder="Enter ingredient">
+            <button onclick="findRecipes()">Find Recipes</button>
+            <div id="recipes"></div>
+        </div>
+        
+        <!-- Budget Tracker Section -->
+        <div class="section">
+            <h2>Budget Tracker</h2>
+            <input type="number" id="budget" placeholder="Set budget">
+            <input type="number" id="spent" placeholder="Amount spent">
+            <button onclick="updateBudget()">Update</button>
+            <p id="budgetStatus"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
